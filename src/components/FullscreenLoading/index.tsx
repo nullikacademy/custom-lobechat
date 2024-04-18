@@ -1,4 +1,4 @@
-import { Icon, Logo } from '@lobehub/ui';
+import { Icon, Logo } from 'nullikaiui';
 import { Loader2 } from 'lucide-react';
 import { memo } from 'react';
 import { Center, Flexbox } from 'react-layout-kit';
