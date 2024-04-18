@@ -1,4 +1,4 @@
-import { ChatHeader, Logo } from '@lobehub/ui';
+import { ChatHeader, Logo } from 'nullikaiui';
 import { createStyles } from 'antd-style';
 import Link from 'next/link';
 import { memo } from 'react';
