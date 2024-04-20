@@ -69,7 +69,7 @@ export const localeOptions: LocaleOptions = [
     value: 'es-ES',
   },
   {
-    label: 'العربية',
+    label: 'فارسی',
     value: 'ar',
   },
   {
