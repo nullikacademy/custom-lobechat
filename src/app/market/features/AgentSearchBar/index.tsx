@@ -1,6 +1,6 @@
 'use client';
 
-import { SearchBar } from 'nullikaiui';
+import { SearchBar } from '@lobehub/ui';
 import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

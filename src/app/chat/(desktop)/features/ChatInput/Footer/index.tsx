@@ -1,4 +1,4 @@
-import { Icon } from 'nullikaiui';
+import { Icon } from '@lobehub/ui';
 import { Button, Dropdown, Space } from 'antd';
 import { createStyles } from 'antd-style';
 import {

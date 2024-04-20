@@ -1,4 +1,4 @@
-import { OpenGPTPluginManifest, OpenGPTPluginMeta } from '@lobehub/chat-plugin-sdk';
+import { LobeChatPluginManifest, LobeChatPluginMeta } from '@lobehub/chat-plugin-sdk';
 import { act, renderHook } from '@testing-library/react';
 import useSWR from 'swr';
 import { Mock, afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
@@ -89,7 +89,7 @@ beforeEach(() => {
         meta: { title: 'plugin1', avatar: '🍏' },
         manifest: 'https://abc.com/manifest.json',
         schemaVersion: 1,
-      } as OpenGPTPluginMeta,
+      } as LobeChatPluginMeta,
     ],
   });
   console.error = () => {};
@@ -266,7 +266,7 @@ describe('useToolStore:pluginStore', () => {
           {
             identifier: 'plugin1',
             meta: { title: 'plugin1', avatar: '🍏' },
-          } as OpenGPTPluginMeta,
+          } as LobeChatPluginMeta,
         ],
       });
 
@@ -291,12 +291,12 @@ describe('useToolStore:pluginStore', () => {
               identifier: 'plugin1',
               meta: { title: 'plugin1', avatar: '🍏' },
               manifest: 'https://abc.com/manifest.json',
-            } as OpenGPTPluginMeta,
+            } as LobeChatPluginMeta,
             {
               identifier: 'plugin2',
               meta: { title: 'plugin2', avatar: '🍏' },
               manifest: 'https://abc.com/manifest.json',
-            } as OpenGPTPluginMeta,
+            } as LobeChatPluginMeta,
           ],
         });
       });
@@ -327,7 +327,7 @@ describe('useToolStore:pluginStore', () => {
               manifest: {
                 identifier: pluginIdentifier,
                 meta: {},
-              } as OpenGPTPluginManifest,
+              } as LobeChatPluginManifest,
             },
           ],
         });

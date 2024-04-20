@@ -1,4 +1,4 @@
-import { Alert, Modal, type ModalProps } from 'nullikaiui';
+import { Alert, Modal, type ModalProps } from '@lobehub/ui';
 import { Button, Divider, Input } from 'antd';
 import { useTheme } from 'antd-style';
 import isEqual from 'fast-deep-equal';

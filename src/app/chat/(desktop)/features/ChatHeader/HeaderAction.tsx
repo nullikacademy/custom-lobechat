@@ -1,4 +1,4 @@
-import { ActionIcon } from 'nullikaiui';
+import { ActionIcon } from '@lobehub/ui';
 import { PanelRightClose, PanelRightOpen } from 'lucide-react';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';

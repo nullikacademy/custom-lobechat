@@ -2,7 +2,7 @@ import { memo, useEffect } from 'react';
 
 const PageTitle = memo<{ title: string }>(({ title }) => {
   useEffect(() => {
-    document.title = title ? `${title} · OpenGPT` : 'OpenGPT';
+    document.title = title ? `${title} · LobeChat` : 'LobeChat';
   }, [title]);
 
   return null;

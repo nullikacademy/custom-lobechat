@@ -1,4 +1,4 @@
-import { SearchBar } from 'nullikaiui';
+import { SearchBar } from '@lobehub/ui';
 import { memo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

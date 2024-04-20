@@ -1,8 +1,8 @@
-import { OpenGPTPluginApi, Meta } from '@lobehub/chat-plugin-sdk';
+import { LobeChatPluginApi, Meta } from '@lobehub/chat-plugin-sdk';
 import { ReactNode } from 'react';
 
 export interface BuiltinToolManifest {
-  api: OpenGPTPluginApi[];
+  api: LobeChatPluginApi[];
 
   /**
    * Plugin name

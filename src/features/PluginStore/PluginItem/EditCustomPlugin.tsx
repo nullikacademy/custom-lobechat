@@ -1,4 +1,4 @@
-import { ActionIcon } from 'nullikaiui';
+import { ActionIcon } from '@lobehub/ui';
 import isEqual from 'fast-deep-equal';
 import { PackageSearch } from 'lucide-react';
 import { memo, useState } from 'react';

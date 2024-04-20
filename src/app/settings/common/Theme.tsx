@@ -1,4 +1,4 @@
-import { Form, type ItemGroup, SelectWithImg, SliderWithInput } from 'nullikaiui';
+import { Form, type ItemGroup, SelectWithImg, SliderWithInput } from '@lobehub/ui';
 import { Form as AntForm, Select } from 'antd';
 import isEqual from 'fast-deep-equal';
 import { Monitor, Moon, Palette, Sun } from 'lucide-react';

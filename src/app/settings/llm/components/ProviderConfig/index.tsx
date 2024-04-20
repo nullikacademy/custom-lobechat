@@ -1,4 +1,4 @@
-import { Form, type FormItemProps, type ItemGroup } from 'nullikaiui';
+import { Form, type FormItemProps, type ItemGroup } from '@lobehub/ui';
 import { Form as AntForm, Input, Switch } from 'antd';
 import { debounce } from 'lodash-es';
 import { ReactNode, memo } from 'react';

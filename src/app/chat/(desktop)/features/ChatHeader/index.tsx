@@ -1,4 +1,4 @@
-import { ChatHeader } from 'nullikaiui';
+import { ChatHeader } from '@lobehub/ui';
 import { memo } from 'react';
 
 import HeaderAction from './HeaderAction';

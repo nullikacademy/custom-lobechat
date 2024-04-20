@@ -1,4 +1,4 @@
-import { MobileNavBar, MobileNavBarTitle } from 'nullikaiui';
+import { MobileNavBar, MobileNavBarTitle } from '@lobehub/ui';
 import { Tag } from 'antd';
 import { useRouter } from 'next/navigation';
 import { memo } from 'react';

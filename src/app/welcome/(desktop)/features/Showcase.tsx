@@ -1,6 +1,6 @@
 'use client';
 
-import { GridShowcase } from 'nullikaiui';
+import { GridShowcase } from '@lobehub/ui';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 

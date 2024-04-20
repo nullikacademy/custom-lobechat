@@ -41,7 +41,7 @@ const createStore: StateCreator<ChatStore, [['zustand/devtools', never]]> = (...
 export const useChatStore = createWithEqualityFn<ChatStore>()(
   subscribeWithSelector(
     devtools(createStore, {
-      name: 'OpenGPT_Chat' + (isDev ? '_DEV' : ''),
+      name: 'LobeChat_Chat' + (isDev ? '_DEV' : ''),
     }),
   ),
   shallow,

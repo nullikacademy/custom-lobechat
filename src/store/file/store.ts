@@ -23,7 +23,7 @@ const createStore: StateCreator<FileStore, [['zustand/devtools', never]]> = (...
 
 export const useFileStore = createWithEqualityFn<FileStore>()(
   devtools(createStore, {
-    name: 'OpenGPT_File' + (isDev ? '_DEV' : ''),
+    name: 'LobeChat_File' + (isDev ? '_DEV' : ''),
   }),
   shallow,
 );

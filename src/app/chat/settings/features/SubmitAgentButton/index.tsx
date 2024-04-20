@@ -1,4 +1,4 @@
-import { ActionIcon } from 'nullikaiui';
+import { ActionIcon } from '@lobehub/ui';
 import { useResponsive } from 'antd-style';
 import { Share2 } from 'lucide-react';
 import { memo, useState } from 'react';

@@ -5,8 +5,8 @@ import { Flexbox } from 'react-layout-kit';
 
 import { genSize, useStyles } from './style';
 
-const LogoThree = dynamic(() => import('nullikaiui/es/LogoThree'));
-const LogoSpline = dynamic(() => import('nullikaiui/es/LogoThree/LogoSpline'));
+const LogoThree = dynamic(() => import('@lobehub/ui/es/LogoThree'));
+const LogoSpline = dynamic(() => import('@lobehub/ui/es/LogoThree/LogoSpline'));
 
 const Hero = memo<{ mobile?: boolean; width: number }>(({ width, mobile }) => {
   const size: any = {
@@ -36,7 +36,7 @@ const Hero = memo<{ mobile?: boolean; width: number }>(({ width, mobile }) => {
         {mobile ? <LogoThree size={size.logo} /> : <LogoSpline height={'100%'} width={'100%'} />}
       </Flexbox>
       <div className={styles.title} style={{ fontSize: size.title }}>
-        <strong style={mobile ? { fontSize: '1.2em' } : {}}>OpenGPT</strong>
+        <strong style={mobile ? { fontSize: '1.2em' } : {}}>LobeChat</strong>
         {mobile ? <br /> : ' '}
         {t('slogan.title')}
       </div>

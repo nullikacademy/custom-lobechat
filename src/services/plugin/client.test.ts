@@ -1,4 +1,4 @@
-import { OpenGPTPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { PluginModel } from '@/database/client/models/plugin';
@@ -32,7 +32,7 @@ describe('PluginService', () => {
       // Arrange
       const fakePlugin = {
         identifier: 'test-plugin',
-        manifest: { name: 'TestPlugin', version: '1.0.0' } as unknown as OpenGPTPluginManifest,
+        manifest: { name: 'TestPlugin', version: '1.0.0' } as unknown as LobeChatPluginManifest,
         type: 'plugin',
       } as InstallPluginParams;
       vi.mocked(PluginModel.create).mockResolvedValue(fakePlugin);
@@ -118,7 +118,7 @@ describe('PluginService', () => {
     it('should update a plugin manifest', async () => {
       // Arrange
       const id = 'plugin-id';
-      const manifest = { name: 'NewPluginManifest' } as unknown as OpenGPTPluginManifest;
+      const manifest = { name: 'NewPluginManifest' } as unknown as LobeChatPluginManifest;
       vi.mocked(PluginModel.update).mockResolvedValue(1);
 
       // Act

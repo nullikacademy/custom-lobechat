@@ -1,5 +1,5 @@
 import { VoiceList } from '@lobehub/tts';
-import { Form, ItemGroup } from 'nullikaiui';
+import { Form, ItemGroup } from '@lobehub/ui';
 import { Form as AFrom, Select, Switch } from 'antd';
 import isEqual from 'fast-deep-equal';
 import { debounce } from 'lodash-es';

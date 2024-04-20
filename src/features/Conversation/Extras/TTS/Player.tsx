@@ -1,5 +1,5 @@
 import { AudioPlayer, AudioPlayerProps } from '@lobehub/tts/react';
-import { ActionIcon, Alert, Highlighter } from 'nullikaiui';
+import { ActionIcon, Alert, Highlighter } from '@lobehub/ui';
 import { Button } from 'antd';
 import { TrashIcon } from 'lucide-react';
 import { memo } from 'react';

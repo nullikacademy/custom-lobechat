@@ -1,4 +1,4 @@
-import { TokenTag, Tooltip } from 'nullikaiui';
+import { TokenTag, Tooltip } from '@lobehub/ui';
 import numeral from 'numeral';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';

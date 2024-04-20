@@ -1,4 +1,4 @@
-import { Modal, TabsNav } from 'nullikaiui';
+import { Modal, TabsNav } from '@lobehub/ui';
 import { Divider, TabsProps } from 'antd';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';

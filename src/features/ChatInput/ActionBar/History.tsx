@@ -1,4 +1,4 @@
-import { ActionIcon, SliderWithInput } from 'nullikaiui';
+import { ActionIcon, SliderWithInput } from '@lobehub/ui';
 import { Popover, Switch } from 'antd';
 import { Timer, TimerOff } from 'lucide-react';
 import { memo } from 'react';

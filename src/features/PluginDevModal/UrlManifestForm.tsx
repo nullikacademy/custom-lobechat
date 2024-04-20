@@ -1,5 +1,5 @@
-import { OpenGPTPluginManifest } from '@lobehub/chat-plugin-sdk';
-import { ActionIcon, FormItem, Input } from 'nullikaiui';
+import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { ActionIcon, FormItem, Input } from '@lobehub/ui';
 import { Checkbox, Form, FormInstance } from 'antd';
 import { FileCode, RotateCwIcon } from 'lucide-react';
 import { memo, useState } from 'react';
@@ -38,7 +38,7 @@ const UrlManifestForm = memo<{ form: FormInstance; isEditMode: boolean }>(
   ({ form, isEditMode }) => {
     const { t } = useTranslation('plugin');
 
-    const [manifest, setManifest] = useState<OpenGPTPluginManifest>();
+    const [manifest, setManifest] = useState<LobeChatPluginManifest>();
 
     const urlKey = ['customParams', 'manifestUrl'];
     const proxyKey = ['customParams', 'useProxy'];

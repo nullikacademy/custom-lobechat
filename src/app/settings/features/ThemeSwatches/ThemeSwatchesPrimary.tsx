@@ -4,7 +4,7 @@ import {
   findCustomThemeName,
   primaryColors,
   primaryColorsSwatches,
-} from 'nullikaiui';
+} from '@lobehub/ui';
 import { memo } from 'react';
 
 import { useGlobalStore } from '@/store/global';

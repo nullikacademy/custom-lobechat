@@ -1,4 +1,4 @@
-import { ActionIcon, EditableText, SortableList } from 'nullikaiui';
+import { ActionIcon, EditableText, SortableList } from '@lobehub/ui';
 import { App, Popconfirm } from 'antd';
 import { createStyles } from 'antd-style';
 import { PencilLine, Trash } from 'lucide-react';

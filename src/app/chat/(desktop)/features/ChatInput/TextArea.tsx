@@ -1,4 +1,4 @@
-import { TextArea } from 'nullikaiui';
+import { TextArea } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { TextAreaRef } from 'antd/es/input/TextArea';
 import { memo, useEffect, useRef } from 'react';

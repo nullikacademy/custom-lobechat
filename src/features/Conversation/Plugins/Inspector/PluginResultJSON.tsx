@@ -1,4 +1,4 @@
-import { Highlighter } from 'nullikaiui';
+import { Highlighter } from '@lobehub/ui';
 import { memo } from 'react';
 
 export interface FunctionMessageProps {

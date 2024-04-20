@@ -1,6 +1,6 @@
 'use client';
 
-import { Icon } from 'nullikaiui';
+import { Icon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { isString } from 'lodash-es';
 import { Command, Delete, Option } from 'lucide-react';

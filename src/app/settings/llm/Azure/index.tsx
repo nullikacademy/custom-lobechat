@@ -1,5 +1,5 @@
 import { Azure, OpenAI } from '@lobehub/icons';
-import { Markdown } from 'nullikaiui';
+import { Markdown } from '@lobehub/ui';
 import { AutoComplete, Divider, Input } from 'antd';
 import { createStyles } from 'antd-style';
 import { memo } from 'react';

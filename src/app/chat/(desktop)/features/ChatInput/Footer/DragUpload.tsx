@@ -1,4 +1,4 @@
-import { Icon } from 'nullikaiui';
+import { Icon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { FileImage, FileText, FileUpIcon } from 'lucide-react';
 import { rgba } from 'polished';

@@ -1,4 +1,4 @@
-import { Swatches, primaryColorsSwatches } from 'nullikaiui';
+import { Swatches, primaryColorsSwatches } from '@lobehub/ui';
 import { memo } from 'react';
 
 import { DEFAULT_BACKGROUND_COLOR } from '@/const/meta';

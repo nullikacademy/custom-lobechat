@@ -1,6 +1,6 @@
 'use client';
 
-import { DraggablePanelBody } from 'nullikaiui';
+import { DraggablePanelBody } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { memo } from 'react';
 

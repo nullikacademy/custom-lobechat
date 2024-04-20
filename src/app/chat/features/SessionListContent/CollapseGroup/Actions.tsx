@@ -1,4 +1,4 @@
-import { ActionIcon, Icon } from 'nullikaiui';
+import { ActionIcon, Icon } from '@lobehub/ui';
 import { App, Dropdown, DropdownProps, MenuProps } from 'antd';
 import { createStyles } from 'antd-style';
 import { MoreVertical, PencilLine, Plus, Settings2, Trash } from 'lucide-react';

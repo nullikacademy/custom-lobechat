@@ -1,4 +1,4 @@
-import { Tag } from 'nullikaiui';
+import { Tag } from '@lobehub/ui';
 import { memo } from 'react';
 
 import ModelIcon from './ModelIcon';

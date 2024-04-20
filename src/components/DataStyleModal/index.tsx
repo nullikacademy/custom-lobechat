@@ -1,4 +1,4 @@
-import { Icon, Modal } from 'nullikaiui';
+import { Icon, Modal } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { LucideIcon } from 'lucide-react';
 import { rgba } from 'polished';

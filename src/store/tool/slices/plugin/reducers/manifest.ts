@@ -1,13 +1,13 @@
-import { OpenGPTPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
 import { produce } from 'immer';
 
 import { PluginManifestMap } from '@/types/tool/plugin';
 
-type AddManifestDispatch = { id: string; plugin: OpenGPTPluginManifest; type: 'addManifest' };
+type AddManifestDispatch = { id: string; plugin: LobeChatPluginManifest; type: 'addManifest' };
 type DeleteManifestDispatch = { id: string; type: 'deleteManifest' };
 // type UpdateManifestDispatch = {
 //   id: string;
-//   plugin: OpenGPTPlugin;
+//   plugin: LobeChatPlugin;
 //   type: 'updateManifest';
 //   version: string;
 // };

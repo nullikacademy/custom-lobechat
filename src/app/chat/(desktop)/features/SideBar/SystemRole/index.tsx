@@ -1,4 +1,4 @@
-import { ActionIcon, EditableMessage } from 'nullikaiui';
+import { ActionIcon, EditableMessage } from '@lobehub/ui';
 import { Skeleton } from 'antd';
 import { Edit } from 'lucide-react';
 import { useRouter } from 'next/navigation';

@@ -1,4 +1,4 @@
-import { Input, Modal, type ModalProps } from 'nullikaiui';
+import { Input, Modal, type ModalProps } from '@lobehub/ui';
 import { App } from 'antd';
 import isEqual from 'fast-deep-equal';
 import { memo, useState } from 'react';

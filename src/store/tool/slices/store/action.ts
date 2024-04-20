@@ -1,4 +1,4 @@
-import { OpenGPTPluginsMarketIndex } from '@lobehub/chat-plugin-sdk';
+import { LobeChatPluginsMarketIndex } from '@lobehub/chat-plugin-sdk';
 import { t } from 'i18next';
 import { produce } from 'immer';
 import useSWR, { SWRResponse, mutate } from 'swr';
@@ -22,13 +22,13 @@ const INSTALLED_PLUGINS = 'loadInstalledPlugins';
 export interface PluginStoreAction {
   installPlugin: (identifier: string, type?: 'plugin' | 'customPlugin') => Promise<void>;
   installPlugins: (plugins: string[]) => Promise<void>;
-  loadPluginStore: () => Promise<OpenGPTPluginsMarketIndex>;
+  loadPluginStore: () => Promise<LobeChatPluginsMarketIndex>;
   refreshPlugins: () => Promise<void>;
   uninstallPlugin: (identifier: string) => Promise<void>;
 
   updateInstallLoadingState: (key: string, value: boolean | undefined) => void;
   useFetchInstalledPlugins: () => SWRResponse<LobeTool[]>;
-  useFetchPluginStore: () => SWRResponse<OpenGPTPluginsMarketIndex>;
+  useFetchPluginStore: () => SWRResponse<LobeChatPluginsMarketIndex>;
 }
 
 export const createPluginStoreSlice: StateCreator<
@@ -101,5 +101,5 @@ export const createPluginStoreSlice: StateCreator<
       revalidateOnFocus: false,
     }),
   useFetchPluginStore: () =>
-    useSWR<OpenGPTPluginsMarketIndex>('loadPluginStore', get().loadPluginStore),
+    useSWR<LobeChatPluginsMarketIndex>('loadPluginStore', get().loadPluginStore),
 });

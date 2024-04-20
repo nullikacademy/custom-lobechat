@@ -1,4 +1,4 @@
-import { Form, type ItemGroup } from 'nullikaiui';
+import { Form, type ItemGroup } from '@lobehub/ui';
 import { Form as AntForm, App, Button, Input } from 'antd';
 import isEqual from 'fast-deep-equal';
 import { AppWindow } from 'lucide-react';

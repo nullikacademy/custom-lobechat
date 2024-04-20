@@ -1,4 +1,4 @@
-import { Icon, Tag } from 'nullikaiui';
+import { Icon, Tag } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { BadgeCheck, CircleUser, Package } from 'lucide-react';
 import { rgba } from 'polished';

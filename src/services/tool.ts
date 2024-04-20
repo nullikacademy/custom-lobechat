@@ -1,6 +1,6 @@
 import {
-  OpenGPTPluginManifest,
-  OpenGPTPluginsMarketIndex,
+  LobeChatPluginManifest,
+  LobeChatPluginsMarketIndex,
   pluginManifestSchema,
 } from '@lobehub/chat-plugin-sdk';
 
@@ -44,7 +44,7 @@ class ToolService {
   /**
    * get plugin list from store
    */
-  getPluginList = async (): Promise<OpenGPTPluginsMarketIndex> => {
+  getPluginList = async (): Promise<LobeChatPluginsMarketIndex> => {
     const locale = globalHelpers.getCurrentLanguage();
 
     const res = await fetch(`${API_ENDPOINTS.pluginStore}?locale=${locale}`);
@@ -55,7 +55,7 @@ class ToolService {
   getPluginManifest = async (
     url?: string,
     useProxy: boolean = false,
-  ): Promise<OpenGPTPluginManifest> => {
+  ): Promise<LobeChatPluginManifest> => {
     // 1. valid plugin
     if (!url) {
       throw new TypeError('noManifest');
@@ -63,7 +63,7 @@ class ToolService {
 
     // 2. 发送请求
 
-    let data = await this._fetchJSON<OpenGPTPluginManifest>(url, useProxy);
+    let data = await this._fetchJSON<LobeChatPluginManifest>(url, useProxy);
 
     // @ts-ignore
     // if there is a description_for_model, it is an OpenAI plugin
@@ -101,8 +101,8 @@ class ToolService {
 
   private convertOpenAIManifestToLobeManifest = (
     data: OpenAIPluginManifest,
-  ): OpenGPTPluginManifest => {
-    const manifest: OpenGPTPluginManifest = {
+  ): LobeChatPluginManifest => {
+    const manifest: LobeChatPluginManifest = {
       api: [],
       homepage: data.legal_info_url,
       identifier: data.name_for_model,

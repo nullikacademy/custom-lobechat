@@ -1,4 +1,4 @@
-import { Avatar, Icon, Tag } from 'nullikaiui';
+import { Avatar, Icon, Tag } from '@lobehub/ui';
 import type { MenuProps } from 'antd';
 import { Dropdown } from 'antd';
 import isEqual from 'fast-deep-equal';

@@ -1,4 +1,4 @@
-import { Markdown, TabsNav } from 'nullikaiui';
+import { Markdown, TabsNav } from '@lobehub/ui';
 import { memo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';

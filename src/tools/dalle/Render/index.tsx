@@ -1,4 +1,4 @@
-import { ActionIcon, ImageGallery } from 'nullikaiui';
+import { ActionIcon, ImageGallery } from '@lobehub/ui';
 import { Download } from 'lucide-react';
 import { memo, useRef } from 'react';
 import { Flexbox } from 'react-layout-kit';

@@ -44,7 +44,7 @@ export const useGlobalStore = createWithEqualityFn<GlobalStore>()(
   persist(
     subscribeWithSelector(
       devtools(createStore, {
-        name: 'OpenGPT_Global' + (isDev ? '_DEV' : ''),
+        name: 'LobeChat_Global' + (isDev ? '_DEV' : ''),
       }),
     ),
     persistOptions,
