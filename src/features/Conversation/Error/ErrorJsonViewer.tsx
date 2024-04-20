@@ -1,4 +1,4 @@
-import { Highlighter } from '@lobehub/ui';
+import { Highlighter } from 'nullikaiui';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
