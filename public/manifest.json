@@ -29,7 +29,7 @@
     }
   ],
   "id": "/",
-  "name": "OpenGPT",
+  "name": "LobeChat",
   "orientation": "portrait",
   "scope": "/",
   "screenshots": [
@@ -54,7 +54,7 @@
       "type": "image/png"
     }
   ],
-  "short_name": "OpenGPT",
+  "short_name": "LobeChat",
   "splash_pages": null,
   "start_url": ".",
   "theme_color": "#000000"

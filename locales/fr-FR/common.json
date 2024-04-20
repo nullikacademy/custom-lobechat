@@ -1,7 +1,7 @@
 {
   "about": "À propos",
   "advanceSettings": "Paramètres avancés",
-  "appInitializing": "OpenGPT est en cours de démarrage, veuillez patienter...",
+  "appInitializing": "LobeChat est en cours de démarrage, veuillez patienter...",
   "autoGenerate": "Générer automatiquement",
   "autoGenerateTooltip": "Générer automatiquement la description de l'agent basée sur les suggestions",
   "cancel": "Annuler",
@@ -141,9 +141,9 @@
   "telemetry": {
     "allow": "Autoriser",
     "deny": "Refuser",
-    "desc": "Nous aimerions recueillir anonymement des informations sur votre utilisation afin de nous aider à améliorer OpenGPT et à vous offrir une meilleure expérience produit. Vous pouvez désactiver cette fonctionnalité à tout moment dans les paramètres - À propos.",
+    "desc": "Nous aimerions recueillir anonymement des informations sur votre utilisation afin de nous aider à améliorer LobeChat et à vous offrir une meilleure expérience produit. Vous pouvez désactiver cette fonctionnalité à tout moment dans les paramètres - À propos.",
     "learnMore": "En savoir plus",
-    "title": "Aider OpenGPT à s'améliorer"
+    "title": "Aider LobeChat à s'améliorer"
   },
   "temp": "Temporaire",
   "updateAgent": "Mettre à jour les informations de l'agent",
