@@ -1,4 +1,4 @@
-import { ImageGallery } from '@lobehub/ui';
+import { ImageGallery } from 'nullikaiui';
 import { useResponsive } from 'antd-style';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
