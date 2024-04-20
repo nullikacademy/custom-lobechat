@@ -63,7 +63,7 @@ const metadata: Metadata = {
     images: [
       'https://nullik.com/ai/og-960x540.png',
     ],
-    site: '@lobehub',
+    site: '@themortaza',
     title,
   },
 };
