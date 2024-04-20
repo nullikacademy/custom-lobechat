@@ -1,12 +1,12 @@
 ---
-title: Configure ZITADEL Authentication Service for LobeChat
+title: Configure ZITADEL Authentication Service for OpenGPT
 description: >-
-  Learn how to configure ZITADEL Authentication Service for LobeChat deployment,
+  Learn how to configure ZITADEL Authentication Service for OpenGPT deployment,
   including creating ZITADEL applications, setting up environment variables, and
   enabling single sign-on (SSO).
 tags:
   - ZITADEL Authentication
-  - LobeChat Deployment
+  - OpenGPT Deployment
   - Single Sign-On (SSO)
   - Environment Variables
   - ZITADEL Applications
@@ -56,7 +56,7 @@ http(s)://your-domain/api/auth/callback/zitadel
 <Callout type={'important'}>
   - You can fill in or modify redirect URIs after creating the application, but make sure the filled
   URL is consistent with the deployed URL. - Replace `http(s)://your-domain` with the actual URL
-  that LobeChat is deployed to.
+  that OpenGPT is deployed to.
 </Callout>
 
 Confirm the configuration and click **Create**.
@@ -85,11 +85,11 @@ In the application settings page, navigate to the **URLs** tab, and save the **i
 
 ### Configure Environment Variables
 
-When deploying LobeChat, you need to configure the following environment variables:
+When deploying OpenGPT, you need to configure the following environment variables:
 
 | Environment Variable | Type | Description |
 | --- | --- | --- |
-| `ENABLE_OAUTH_SSO` | Required | Enable single sign-on (SSO) for LobeChat. Set to `1` to enable single sign-on. |
+| `ENABLE_OAUTH_SSO` | Required | Enable single sign-on (SSO) for OpenGPT. Set to `1` to enable single sign-on. |
 | `NEXTAUTH_SECRET` | Required | Key used to encrypt Auth.js session tokens. You can generate a key using the following command: `openssl rand -base64 32` |
 | `SSO_PROVIDERS` | Optional | Select the single sign-on provider for LoboChat. Use `zitadel` for ZITADEL. |
 | `ZITADEL_CLIENT_ID` | Required | Client ID (`ClientId` as shown in ZITADEL) of the ZITADEL application |
@@ -105,6 +105,6 @@ When deploying LobeChat, you need to configure the following environment variabl
 </Steps>
 
 <Callout>
-  After successful deployment, users will be able to authenticate and use LobeChat using existing
+  After successful deployment, users will be able to authenticate and use OpenGPT using existing
   users configured in ZITADEL.
 </Callout>

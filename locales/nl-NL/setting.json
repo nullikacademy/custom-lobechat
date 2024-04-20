@@ -4,7 +4,7 @@
   },
   "analytics": {
     "telemetry": {
-      "desc": "Door te kiezen om telemetrische gegevens te verzenden, kun je ons helpen om de algehele gebruikerservaring van LobeChat te verbeteren",
+      "desc": "Door te kiezen om telemetrische gegevens te verzenden, kun je ons helpen om de algehele gebruikerservaring van OpenGPT te verbeteren",
       "title": "Anonieme gebruiksgegevens verzenden"
     },
     "title": "Analytics"
@@ -53,11 +53,11 @@
           "title": "Model weergavenaam"
         },
         "files": {
-          "extra": "Currently, the file upload implementation in LobeChat is just a temporary solution and is for self-exploration only. Please wait for the full file upload capability in the future.",
+          "extra": "Currently, the file upload implementation in OpenGPT is just a temporary solution and is for self-exploration only. Please wait for the full file upload capability in the future.",
           "title": "Support File Upload"
         },
         "functionCall": {
-          "extra": "This configuration will only enable the function call capability in LobeChat. Whether function calls are supported depends entirely on the model itself. Please test the availability of function calls of this model on your own.",
+          "extra": "This configuration will only enable the function call capability in OpenGPT. Whether function calls are supported depends entirely on the model itself. Please test the availability of function calls of this model on your own.",
           "title": "Support Function Call"
         },
         "id": {
@@ -70,7 +70,7 @@
           "title": "Maximum Token Count"
         },
         "vision": {
-          "extra": "This configuration will only enable the image upload feature in LobeChat. Whether image recognition is supported depends entirely on the model itself. Please test the availability of visual recognition capability of this model on your own.",
+          "extra": "This configuration will only enable the image upload feature in OpenGPT. Whether image recognition is supported depends entirely on the model itself. Please test the availability of visual recognition capability of this model on your own.",
           "title": "Support Visual Recognition"
         }
       }

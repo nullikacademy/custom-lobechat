@@ -5,7 +5,7 @@ import type { StateCreator } from 'zustand/vanilla';
 
 import { marketService } from '@/services/market';
 import { globalHelpers } from '@/store/global/helpers';
-import { AgentsMarketItem, LobeChatAgentsMarketIndex } from '@/types/market';
+import { AgentsMarketItem, OpenGPTAgentsMarketIndex } from '@/types/market';
 
 import type { Store } from './store';
 
@@ -15,7 +15,7 @@ export interface StoreAction {
   setSearchKeywords: (keywords: string) => void;
   updateAgentMap: (key: string, value: AgentsMarketItem) => void;
   useFetchAgent: (identifier: string) => SWRResponse<AgentsMarketItem>;
-  useFetchAgentList: () => SWRResponse<LobeChatAgentsMarketIndex>;
+  useFetchAgentList: () => SWRResponse<OpenGPTAgentsMarketIndex>;
 }
 
 export const createMarketAction: StateCreator<
@@ -58,7 +58,7 @@ export const createMarketAction: StateCreator<
       },
     ),
   useFetchAgentList: () =>
-    useSWR<LobeChatAgentsMarketIndex>(
+    useSWR<OpenGPTAgentsMarketIndex>(
       globalHelpers.getCurrentLanguage(),
       marketService.getAgentList,
       {

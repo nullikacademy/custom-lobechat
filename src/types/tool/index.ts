@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest, LobePluginType } from '@lobehub/chat-plugin-sdk';
+import { OpenGPTPluginManifest, LobePluginType } from '@lobehub/chat-plugin-sdk';
 
 import { CustomPluginParams } from './plugin';
 import { LobeToolType } from './tool';
@@ -6,7 +6,7 @@ import { LobeToolType } from './tool';
 export interface LobeTool {
   customParams?: CustomPluginParams;
   identifier: string;
-  manifest?: LobeChatPluginManifest;
+  manifest?: OpenGPTPluginManifest;
   settings?: any;
   type: LobeToolType;
 }

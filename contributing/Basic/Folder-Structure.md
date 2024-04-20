@@ -1,6 +1,6 @@
 # Directory Structure
 
-The directory structure of LobeChat is as follows:
+The directory structure of OpenGPT is as follows:
 
 ```bash
 src

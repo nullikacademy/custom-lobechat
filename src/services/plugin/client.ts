@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { OpenGPTPluginManifest } from '@lobehub/chat-plugin-sdk';
 
 import { PluginModel } from '@/database/client/models/plugin';
 import { LobeTool } from '@/types/tool';
@@ -6,7 +6,7 @@ import { LobeToolCustomPlugin } from '@/types/tool/plugin';
 
 export interface InstallPluginParams {
   identifier: string;
-  manifest: LobeChatPluginManifest;
+  manifest: OpenGPTPluginManifest;
   type: 'plugin' | 'customPlugin';
 }
 
@@ -30,7 +30,7 @@ export class ClientService {
   async updatePlugin(id: string, value: LobeToolCustomPlugin) {
     return PluginModel.update(id, value);
   }
-  async updatePluginManifest(id: string, manifest: LobeChatPluginManifest) {
+  async updatePluginManifest(id: string, manifest: OpenGPTPluginManifest) {
     return PluginModel.update(id, { manifest });
   }
 
