@@ -1,4 +1,4 @@
-import { Markdown } from '@lobehub/ui';
+import { Markdown } from 'nullikaiui';
 import { memo } from 'react';
 
 import { useGlobalStore } from '@/store/global';

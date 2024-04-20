@@ -1,6 +1,6 @@
 'use client';
 
-import { SpotlightCard, SpotlightCardProps } from '@lobehub/ui';
+import { SpotlightCard, SpotlightCardProps } from 'nullikaiui';
 import { FC, memo, useEffect } from 'react';
 
 import ClientResponsiveContent from '@/components/client/ClientResponsiveContent';

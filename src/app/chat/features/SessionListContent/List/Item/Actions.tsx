@@ -1,4 +1,4 @@
-import { ActionIcon, Icon } from '@lobehub/ui';
+import { ActionIcon, Icon } from 'nullikaiui';
 import { App, Dropdown, type MenuProps } from 'antd';
 import { createStyles } from 'antd-style';
 import isEqual from 'fast-deep-equal';

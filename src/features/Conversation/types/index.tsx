@@ -1,5 +1,5 @@
-import { type ChatItemProps } from '@lobehub/ui';
-import { ActionEvent } from '@lobehub/ui';
+import { type ChatItemProps } from 'nullikaiui';
+import { ActionEvent } from 'nullikaiui';
 import { FC, ReactNode } from 'react';
 
 import { LLMRoleType } from '@/types/llm';

@@ -1,4 +1,4 @@
-import { AlertProps, ChatItem } from '@lobehub/ui';
+import { AlertProps, ChatItem } from 'nullikaiui';
 import { createStyles } from 'antd-style';
 import isEqual from 'fast-deep-equal';
 import { ReactNode, memo, useCallback, useMemo, useState } from 'react';

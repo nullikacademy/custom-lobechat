@@ -1,4 +1,4 @@
-import { Avatar, DivProps } from '@lobehub/ui';
+import { Avatar, DivProps } from 'nullikaiui';
 import { createStyles } from 'antd-style';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';

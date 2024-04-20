@@ -1,6 +1,6 @@
 'use client';
 
-import { type MobileNavBarTitleProps } from '@lobehub/ui';
+import { type MobileNavBarTitleProps } from 'nullikaiui';
 import { createStyles } from 'antd-style';
 import dynamic from 'next/dynamic';
 import { CSSProperties, PropsWithChildren, memo } from 'react';

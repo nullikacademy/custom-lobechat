@@ -1,4 +1,4 @@
-import { Icon } from '@lobehub/ui';
+import { Icon } from 'nullikaiui';
 import { Dropdown } from 'antd';
 import { createStyles } from 'antd-style';
 import isEqual from 'fast-deep-equal';

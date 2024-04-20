@@ -1,4 +1,4 @@
-import { Icon } from '@lobehub/ui';
+import { Icon } from 'nullikaiui';
 import { Button, Result } from 'antd';
 import { CheckCircle, CpuIcon } from 'lucide-react';
 import { memo, useState } from 'react';

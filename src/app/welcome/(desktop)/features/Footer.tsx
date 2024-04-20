@@ -1,6 +1,6 @@
 'use client';
 
-import { ActionIcon, DiscordIcon } from '@lobehub/ui';
+import { ActionIcon, DiscordIcon } from 'nullikaiui';
 import { useTheme } from 'antd-style';
 import { Book, Github } from 'lucide-react';
 import { memo } from 'react';

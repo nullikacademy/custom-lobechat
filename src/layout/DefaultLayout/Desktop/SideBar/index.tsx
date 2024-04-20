@@ -1,4 +1,4 @@
-import { SideNav } from '@lobehub/ui';
+import { SideNav } from 'nullikaiui';
 import { memo } from 'react';
 
 import { SidebarTabKey } from '@/store/global/initialState';
