@@ -1,4 +1,4 @@
-import { ActionIconGroup } from '@lobehub/ui';
+import { ActionIconGroup } from 'nullikaiui';
 import { memo } from 'react';
 
 import { useChatListActionsBar } from '../hooks/useChatListActionsBar';
