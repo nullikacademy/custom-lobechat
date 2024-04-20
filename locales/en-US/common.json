@@ -1,7 +1,7 @@
 {
   "about": "About",
   "advanceSettings": "Advanced Settings",
-  "appInitializing": "LobeChat is initializing, please wait...",
+  "appInitializing": "OpenGPT is initializing, please wait...",
   "autoGenerate": "Auto Generate",
   "autoGenerateTooltip": "Auto-generate agent description based on prompts",
   "cancel": "Cancel",
@@ -49,7 +49,7 @@
     "title": "Import Data"
   },
   "lang": {
-    "ar": "Arabic",
+    "ar": "Persian",
     "bg-BG": "Bulgarian",
     "bn": "Bengali",
     "cs-CZ": "Czech",
