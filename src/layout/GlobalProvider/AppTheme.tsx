@@ -1,6 +1,6 @@
 'use client';
 
-import { ConfigProvider, NeutralColors, PrimaryColors, ThemeProvider } from '@lobehub/ui';
+import { ConfigProvider, NeutralColors, PrimaryColors, ThemeProvider } from 'nullikaiui';
 import { App } from 'antd';
 import { ThemeAppearance, createStyles } from 'antd-style';
 import 'antd/dist/reset.css';

@@ -1,4 +1,4 @@
-import { EmptyCard } from '@lobehub/ui';
+import { EmptyCard } from 'nullikaiui';
 import { css, cx, useThemeMode } from 'antd-style';
 import isEqual from 'fast-deep-equal';
 import React, { memo, useCallback, useRef } from 'react';

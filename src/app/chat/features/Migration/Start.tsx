@@ -1,4 +1,4 @@
-import { Icon } from '@lobehub/ui';
+import { Icon } from 'nullikaiui';
 import { createStyles } from 'antd-style';
 import { Database, SearchCheck, Zap } from 'lucide-react';
 import { memo } from 'react';

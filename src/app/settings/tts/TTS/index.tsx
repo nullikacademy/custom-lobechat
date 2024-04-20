@@ -1,4 +1,4 @@
-import { Form, type ItemGroup } from '@lobehub/ui';
+import { Form, type ItemGroup } from 'nullikaiui';
 import { Form as AntForm, Select, Switch } from 'antd';
 import isEqual from 'fast-deep-equal';
 import { debounce } from 'lodash-es';

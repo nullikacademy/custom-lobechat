@@ -1,4 +1,4 @@
-import { ChatInputActionBar } from '@lobehub/ui';
+import { ChatInputActionBar } from 'nullikaiui';
 import { ReactNode, memo, useMemo } from 'react';
 
 import { ActionKeys, actionMap, getLeftActionList, getRightActionList } from './config';

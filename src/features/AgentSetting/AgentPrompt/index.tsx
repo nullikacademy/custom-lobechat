@@ -1,4 +1,4 @@
-import { EditableMessage, FormGroup } from '@lobehub/ui';
+import { EditableMessage, FormGroup } from 'nullikaiui';
 import { Button } from 'antd';
 import { createStyles } from 'antd-style';
 import { Bot } from 'lucide-react';

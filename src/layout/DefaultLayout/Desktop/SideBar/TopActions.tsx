@@ -1,4 +1,4 @@
-import { ActionIcon } from '@lobehub/ui';
+import { ActionIcon } from 'nullikaiui';
 import { Compass, MessageSquare } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';

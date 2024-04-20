@@ -1,6 +1,6 @@
 'use client';
 
-import { ChatHeader, ChatHeaderTitle } from '@lobehub/ui';
+import { ChatHeader, ChatHeaderTitle } from 'nullikaiui';
 import { Tag } from 'antd';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';

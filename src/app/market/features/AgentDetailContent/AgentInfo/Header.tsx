@@ -1,4 +1,4 @@
-import { Avatar, Tag } from '@lobehub/ui';
+import { Avatar, Tag } from 'nullikaiui';
 import { App, Button, Typography } from 'antd';
 import { startCase } from 'lodash-es';
 import { useRouter } from 'next/navigation';

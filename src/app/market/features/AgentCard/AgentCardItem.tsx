@@ -1,4 +1,4 @@
-import { Avatar, Tag } from '@lobehub/ui';
+import { Avatar, Tag } from 'nullikaiui';
 import { useHover } from 'ahooks';
 import { Typography } from 'antd';
 import { useThemeMode } from 'antd-style';

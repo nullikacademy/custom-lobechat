@@ -1,6 +1,6 @@
 'use client';
 
-import { GridBackground } from '@lobehub/ui';
+import { GridBackground } from 'nullikaiui';
 import { createStyles } from 'antd-style';
 import dynamic from 'next/dynamic';
 import { PropsWithChildren, memo } from 'react';

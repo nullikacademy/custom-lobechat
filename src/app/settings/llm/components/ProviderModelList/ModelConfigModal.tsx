@@ -1,4 +1,4 @@
-import { Modal } from '@lobehub/ui';
+import { Modal } from 'nullikaiui';
 import { Checkbox, Form, Input } from 'antd';
 import isEqual from 'fast-deep-equal';
 import { memo } from 'react';

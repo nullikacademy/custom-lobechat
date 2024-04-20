@@ -1,4 +1,4 @@
-import { Highlighter } from '@lobehub/ui';
+import { Highlighter } from 'nullikaiui';
 import { Popover } from 'antd';
 import { ReactNode, memo } from 'react';
 

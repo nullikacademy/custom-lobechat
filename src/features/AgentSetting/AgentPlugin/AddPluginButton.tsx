@@ -1,4 +1,4 @@
-import { Icon } from '@lobehub/ui';
+import { Icon } from 'nullikaiui';
 import { Button } from 'antd';
 import { PackagePlus } from 'lucide-react';
 import { forwardRef, useState } from 'react';
