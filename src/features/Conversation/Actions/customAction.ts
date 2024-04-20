@@ -1,4 +1,4 @@
-import { ActionIconGroupItems } from '@lobehub/ui/es/ActionIconGroup';
+import { ActionIconGroupItems } from 'nullikaiui/es/ActionIconGroup';
 import { LanguagesIcon, Play } from 'lucide-react';
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
