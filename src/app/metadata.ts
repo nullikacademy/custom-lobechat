@@ -55,7 +55,7 @@ const metadata: Metadata = {
 
   title: {
     default: title,
-    template: '%s · LobeChat',
+    template: '%s · OpenGPT',
   },
   twitter: {
     card: 'summary_large_image',
