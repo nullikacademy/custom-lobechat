@@ -2,8 +2,6 @@ import { Earth, Instagram, ShoppingCart } from 'lucide-react';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
-
-[]
 import Item from '../features/SettingList/Item';
 import { useStyles } from './style';
 
