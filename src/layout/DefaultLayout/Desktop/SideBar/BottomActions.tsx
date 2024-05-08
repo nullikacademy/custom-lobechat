@@ -78,14 +78,8 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
     {
       icon: <Icon icon={Instagram} />,
       key: 'wiki',
-      label: 'Discord',
+      label: 'Nullik Academy',
       onClick: () => window.open(DISCORD, '__blank'),
-    },
-    {
-      icon: <Icon icon={Heart} />,
-      key: 'about',
-      label: t('about'),
-      onClick: () => window.open(ABOUT, '__blank'),
     },
     {
       type: 'divider',
