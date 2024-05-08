@@ -3,6 +3,7 @@ import { Badge, ConfigProvider, Dropdown, MenuProps } from 'antd';
 import {
   HardDriveDownload,
   HardDriveUpload,
+  Heart,
   Settings,
   Settings2,
   Instagram,
@@ -14,7 +15,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { ABOUT, DISCORD, DOCUMENTS } from '@/const/url';
+import { ABOUT, CHANGELOG, DISCORD, DOCUMENTS, FEEDBACK, GITHUB } from '@/const/url';
 import DataImporter from '@/features/DataImporter';
 import { configService } from '@/services/config';
 import { GlobalStore, useGlobalStore } from '@/store/global';
