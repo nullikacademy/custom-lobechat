@@ -29,8 +29,6 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
   const { t } = useTranslation('common');
 
 
-  useCheckLatestVersion();
-
   const items: MenuProps['items'] = [
     {
       icon: <Icon icon={HardDriveUpload} />,
