@@ -1,9 +1,8 @@
 'use client';
 
 import { memo } from 'react';
-
 import PageTitle from '@/components/PageTitle';
-
+import { useTranslation } from 'react-i18next';
 import Footer from '../features/Footer';
 import Anthropic from './Anthropic';
 import Azure from './Azure';
