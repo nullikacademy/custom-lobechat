@@ -7,7 +7,7 @@ import {
   Heart,
   Settings,
   Settings2,
-  instagram,
+  Instagram,
 } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -76,7 +76,7 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
       type: 'divider',
     },
     {
-      icon: <Icon icon={instagram} />,
+      icon: <Icon icon={Instagram} />,
       key: 'wiki',
       label: 'Discord',
       onClick: () => window.open(DISCORD, '__blank'),
