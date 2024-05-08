@@ -22,6 +22,7 @@ import Perplexity from './Perplexity';
 import TogetherAI from './TogetherAI';
 import ZeroOne from './ZeroOne';
 import Zhipu from './Zhipu';
+import { CURRENT_VERSION } from '@/const/version';
 
 export default memo<{ showOllama: boolean }>(({ showOllama }) => {
   const { t } = useTranslation('setting');
