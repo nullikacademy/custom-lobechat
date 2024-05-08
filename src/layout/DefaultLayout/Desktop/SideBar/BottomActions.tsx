@@ -17,7 +17,6 @@ import { Flexbox } from 'react-layout-kit';
 import { DISCORD, DOCUMENTS } from '@/const/url';
 import DataImporter from '@/features/DataImporter';
 import { configService } from '@/services/config';
-import { GlobalStore, useGlobalStore } from '@/store/global';
 import { SidebarTabKey } from '@/store/global/initialState';
 
 export interface BottomActionProps {
