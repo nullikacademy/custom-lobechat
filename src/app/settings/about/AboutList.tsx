@@ -1,10 +1,9 @@
-import { Feather, FileClock, Heart } from 'lucide-react';
+import { Earth, Instagram, ShoppingCart } from 'lucide-react';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { ABOUT, CHANGELOG, FEEDBACK } from '@/const/url';
-
+[]
 import Item from '../features/SettingList/Item';
 import { useStyles } from './style';
 
@@ -13,21 +12,21 @@ const AboutList = memo(() => {
   const { styles } = useStyles();
   const items = [
     {
-      icon: Feather,
-      label: t('feedback', { ns: 'common' }),
-      onClick: () => window.open(FEEDBACK, '__blank'),
+      icon: Earth,
+      label: 'Nullik Academy Website',
+      onClick: () => window.open('https://nullikacademy.ir', '__blank'),
       value: 'feedback',
     },
     {
-      icon: FileClock,
-      label: t('changelog', { ns: 'common' }),
-      onClick: () => window.open(CHANGELOG, '__blank'),
+      icon: Instagram,
+      label: 'Nullik Academy Instagram',
+      onClick: () => window.open('https://instagram.com/nullikacademy', '__blank'),
       value: 'changelog',
     },
     {
-      icon: Heart,
-      label: t('about', { ns: 'common' }),
-      onClick: () => window.open(ABOUT, '__blank'),
+      icon: ShoppingCart,
+      label: 'Subscribe',
+      onClick: () => window.open('http://opengpt.ir/', '__blank'),
       value: 'about',
     },
   ];
