@@ -1,7 +1,7 @@
 import { ActionIcon, DiscordIcon, Icon } from 'nullikaiui';
 import { Badge, ConfigProvider, Dropdown, MenuProps } from 'antd';
 import {
-  Book,
+  ShoppingCart,
   Feather,
   FileClock,
   HardDriveDownload,
@@ -120,7 +120,7 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
   return (
     <>
       <Link aria-label={t('document')} href={DOCUMENTS} target={'_blank'}>
-        <ActionIcon icon={Book} placement={'right'} title={t('document')} />
+        <ActionIcon icon={ShoppingCart} placement={'right'} title={t('document')} />
       </Link>
       <Dropdown arrow={false} menu={{ items }} trigger={['click']}>
         {hasNewVersion ? (
