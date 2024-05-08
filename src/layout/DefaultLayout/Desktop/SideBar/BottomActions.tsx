@@ -28,12 +28,13 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
   const router = useRouter();
   const { t } = useTranslation('common');
 
-  useCheckLatestVersion();
-
   const [hasNewVersion, useCheckLatestVersion] = useGlobalStore((s) => [
     s.hasNewVersion,
     s.useCheckLatestVersion,
   ]);
+
+  useCheckLatestVersion();
+
 
   const items: MenuProps['items'] = [
     {
