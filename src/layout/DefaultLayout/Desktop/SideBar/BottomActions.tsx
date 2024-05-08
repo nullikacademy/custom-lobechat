@@ -1,5 +1,5 @@
 import { ActionIcon, Icon } from 'nullikaiui';
-import { Badge, ConfigProvider, Dropdown, MenuProps } from 'antd';
+import { Dropdown, MenuProps } from 'antd';
 import {
   ShoppingCart,
   HardDriveDownload,
@@ -28,10 +28,6 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
   const router = useRouter();
   const { t } = useTranslation('common');
 
-  const [hasNewVersion, useCheckLatestVersion] = useGlobalStore((s) => [
-    s.hasNewVersion,
-    s.useCheckLatestVersion,
-  ]);
 
   useCheckLatestVersion();
 
