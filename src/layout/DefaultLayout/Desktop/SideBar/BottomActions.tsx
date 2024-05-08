@@ -1,13 +1,15 @@
-import { ActionIcon, Icon } from 'nullikaiui';
+import { ActionIcon, DiscordIcon, Icon } from 'nullikaiui';
 import { Badge, ConfigProvider, Dropdown, MenuProps } from 'antd';
 import {
+  Book,
+  Feather,
+  FileClock,
+  Github,
   HardDriveDownload,
   HardDriveUpload,
   Heart,
   Settings,
   Settings2,
-  Instagram,
-  Earth,
 } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -76,13 +78,25 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
       type: 'divider',
     },
     {
-      icon: <Icon icon={Instagram} />,
+      icon: <Icon icon={Feather} />,
+      key: 'feedback',
+      label: t('feedback'),
+      onClick: () => window.open(FEEDBACK, '__blank'),
+    },
+    {
+      icon: <Icon icon={FileClock} />,
+      key: 'changelog',
+      label: t('changelog'),
+      onClick: () => window.open(CHANGELOG, '__blank'),
+    },
+    {
+      icon: <Icon icon={DiscordIcon} />,
       key: 'wiki',
       label: 'Discord',
       onClick: () => window.open(DISCORD, '__blank'),
     },
     {
-      icon: <Icon icon={Earth} />,
+      icon: <Icon icon={Heart} />,
       key: 'about',
       label: t('about'),
       onClick: () => window.open(ABOUT, '__blank'),
@@ -106,9 +120,11 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
 
   return (
     <>
-
+      <Link aria-label={'GitHub'} href={GITHUB} target={'_blank'}>
+        <ActionIcon icon={Github} placement={'right'} title={'GitHub'} />
+      </Link>
       <Link aria-label={t('document')} href={DOCUMENTS} target={'_blank'}>
-        <ActionIcon icon={Instagram} placement={'right'} title={t('document')} />
+        <ActionIcon icon={Book} placement={'right'} title={t('document')} />
       </Link>
       <Dropdown arrow={false} menu={{ items }} trigger={['click']}>
         {hasNewVersion ? (

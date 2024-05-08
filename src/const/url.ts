@@ -15,7 +15,7 @@ export const CHANGELOG = urlJoin(GITHUB, 'blob/main/CHANGELOG.md');
 
 const { LOBE_CHAT_DOCS } = getClientConfig();
 
-export const DOCUMENTS = !!LOBE_CHAT_DOCS ? '/docs' : 'https://opengpt.ir/';
+export const DOCUMENTS = !!LOBE_CHAT_DOCS ? '/docs' : 'https://lobehub.com/docs';
 
 export const WIKI_PLUGIN_GUIDE = urlJoin(GITHUB, 'wiki', 'Plugin-Development');
 
@@ -23,7 +23,7 @@ export const MANUAL_UPGRADE_URL = urlJoin(GITHUB, 'wiki', 'Upstream-Sync');
 
 export const ABOUT = pkg.homepage;
 export const FEEDBACK = pkg.bugs.url;
-export const DISCORD = 'https://instagram.com/nullikacademy';
+export const DISCORD = 'https://discord.gg/AYFPHvv2jT';
 export const PRIVACY_URL = 'https://lobehub.com/privacy';
 
 export const PLUGINS_INDEX_URL = 'https://chat-plugins.lobehub.com';

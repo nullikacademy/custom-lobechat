@@ -14,16 +14,16 @@
     "tts",
     "stt"
   ],
-  "homepage": "https://nullikacademy.ir/",
+  "homepage": "https://github.com/lobehub/lobe-chat",
   "bugs": {
-    "url": "https://github.com/nullikacademy/custom-lobechat/issues/new/choose"
+    "url": "https://github.com/lobehub/lobe-chat/issues/new/choose"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nullikacademy/custom-lobechat.git"
+    "url": "https://github.com/lobehub/lobe-chat.git"
   },
   "license": "MIT",
-  "author": "OpenGPT <contact@opengpt.ir>",
+  "author": "LobeHub <i@lobehub.com>",
   "sideEffects": false,
   "scripts": {
     "build": "next build",
