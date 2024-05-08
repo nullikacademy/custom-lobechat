@@ -8,7 +8,6 @@ import { Flexbox } from 'react-layout-kit';
 import { useActiveSettingsKey } from '@/hooks/useActiveSettingsKey';
 
 import SettingList from '../../features/SettingList';
-import UpgradeAlert from '../../features/UpgradeAlert';
 
 const useStyles = createStyles(({ stylish, token, css }) => ({
   body: stylish.noScrollbar,
@@ -37,7 +36,6 @@ const SideBar = memo(() => {
         {t('setting')}
       </Flexbox>
       <Flexbox gap={8} style={{ paddingInline: 8 }}>
-        <UpgradeAlert />
         <SettingList activeTab={activeKey} mobile={mobile} />
       </Flexbox>
     </Flexbox>
