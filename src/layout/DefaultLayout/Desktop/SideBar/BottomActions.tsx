@@ -103,17 +103,7 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
         <ActionIcon icon={ShoppingCart} placement={'right'} title={t('document')} />
       </Link>
       <Dropdown arrow={false} menu={{ items }} trigger={['click']}>
-        {hasNewVersion ? (
-          <Flexbox>
-            <ConfigProvider theme={{ components: { Badge: { dotSize: 8 } } }}>
-              <Badge dot offset={[-4, 4]}>
-                <ActionIcon active={tab === SidebarTabKey.Setting} icon={Settings2} />
-              </Badge>
-            </ConfigProvider>
-          </Flexbox>
-        ) : (
-          <ActionIcon active={tab === SidebarTabKey.Setting} icon={Settings2} />
-        )}
+        <ActionIcon active={tab === SidebarTabKey.Setting} icon={Settings2} />
       </Dropdown>
     </>
   );
