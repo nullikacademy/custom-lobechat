@@ -88,7 +88,7 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
       key: 'setting',
       label: (
         <Flexbox align={'center'} distribution={'space-between'} gap={8} horizontal>
-          {t('setting')} {hasNewVersion && <Badge count={t('upgradeVersion.hasNew')} />}
+          {t('setting')}
         </Flexbox>
       ),
       onClick: () => {
