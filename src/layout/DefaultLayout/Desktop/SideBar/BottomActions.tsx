@@ -1,14 +1,13 @@
-import { ActionIcon, DiscordIcon, Icon } from 'nullikaiui';
+import { ActionIcon, Icon } from 'nullikaiui';
 import { Badge, ConfigProvider, Dropdown, MenuProps } from 'antd';
 import {
   ShoppingCart,
-  Feather,
-  FileClock,
   HardDriveDownload,
   HardDriveUpload,
   Heart,
   Settings,
   Settings2,
+  instagram,
 } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -16,7 +15,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { ABOUT, CHANGELOG, DISCORD, DOCUMENTS, FEEDBACK } from '@/const/url';
+import { ABOUT, DISCORD, DOCUMENTS } from '@/const/url';
 import DataImporter from '@/features/DataImporter';
 import { configService } from '@/services/config';
 import { GlobalStore, useGlobalStore } from '@/store/global';
@@ -77,19 +76,7 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
       type: 'divider',
     },
     {
-      icon: <Icon icon={Feather} />,
-      key: 'feedback',
-      label: t('feedback'),
-      onClick: () => window.open(FEEDBACK, '__blank'),
-    },
-    {
-      icon: <Icon icon={FileClock} />,
-      key: 'changelog',
-      label: t('changelog'),
-      onClick: () => window.open(CHANGELOG, '__blank'),
-    },
-    {
-      icon: <Icon icon={DiscordIcon} />,
+      icon: <Icon icon={instagram} />,
       key: 'wiki',
       label: 'Discord',
       onClick: () => window.open(DISCORD, '__blank'),
