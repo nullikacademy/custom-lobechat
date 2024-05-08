@@ -1,11 +1,8 @@
 'use client';
 
-import Link from 'next/link';
 import { memo } from 'react';
-import { Trans, useTranslation } from 'react-i18next';
 
 import PageTitle from '@/components/PageTitle';
-import { MORE_MODEL_PROVIDER_REQUEST_URL } from '@/const/url';
 
 import Footer from '../features/Footer';
 import Anthropic from './Anthropic';

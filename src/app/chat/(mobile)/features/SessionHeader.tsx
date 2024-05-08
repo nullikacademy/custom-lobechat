@@ -1,14 +1,11 @@
-import { ActionIcon, Avatar, Logo, MobileNavBar } from 'nullikaiui';
+import { ActionIcon, Logo, MobileNavBar } from 'nullikaiui';
 import { createStyles } from 'antd-style';
 import { MessageSquarePlus } from 'lucide-react';
-import { useRouter } from 'next/navigation';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 import { MOBILE_HEADER_ICON_SIZE } from '@/const/layoutTokens';
 import SyncStatusInspector from '@/features/SyncStatusInspector';
-import { useGlobalStore } from '@/store/global';
-import { commonSelectors } from '@/store/global/selectors';
 import { useSessionStore } from '@/store/session';
 import { mobileHeaderSticky } from '@/styles/mobileHeader';
 
@@ -24,8 +21,6 @@ export const useStyles = createStyles(({ css, token }) => ({
 
 const Header = memo(() => {
   const [createSession] = useSessionStore((s) => [s.createSession]);
-  const router = useRouter();
-  const avatar = useGlobalStore(commonSelectors.userAvatar);
   return (
     <MobileNavBar
       left={
