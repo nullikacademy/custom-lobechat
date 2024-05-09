@@ -1,10 +1,9 @@
 import { Upload } from 'antd';
 import { useResponsive } from 'antd-style';
-import { Feather, FileClock, HardDriveDownload, HardDriveUpload } from 'lucide-react';
+import { Instagram, ShoppingCart, HardDriveDownload, HardDriveUpload } from 'lucide-react';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { CHANGELOG, FEEDBACK } from '@/const/url';
 import { useImportConfig } from '@/hooks/useImportConfig';
 import { configService } from '@/services/config';
 import { SettingsTabs } from '@/store/global/initialState';
@@ -27,15 +26,15 @@ const ExtraList = memo<ExtraListProps>(({ activeTab }) => {
       value: 'export',
     },
     {
-      icon: Feather,
-      label: t('feedback'),
-      onClick: () => window.open(FEEDBACK, '__blank'),
+      icon: Instagram,
+      label: 'Nullik Academy Instagram',
+      onClick: () => window.open('https://www.instagram.com/nullikacademy/', '__blank'),
       value: 'feedback',
     },
     {
-      icon: FileClock,
-      label: t('changelog'),
-      onClick: () => window.open(CHANGELOG, '__blank'),
+      icon: ShoppingCart,
+      label: 'Subscribe',
+      onClick: () => window.open('https://opengpt.ir/', '__blank'),
       value: 'changelog',
     },
   ];
