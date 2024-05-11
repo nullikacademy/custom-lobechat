@@ -23,10 +23,10 @@ const metadata: Metadata = {
   description,
   icons: {
     apple:
-      'https://nullik.com/ai/apple-touch-icon.png',
-    icon: 'https://nullik.com/ai/favicon-32x32.png',
+      'https://opengpt.ir/apple-touch-icon.png',
+    icon: 'https://opengpt.ir/favicon-32x32.png',
     shortcut:
-      'https://nullik.com/ai/favicon.ico',
+      'https://opengpt.ir//favicon.ico',
   },
   manifest: noManifest ? undefined : '/manifest.json',
   metadataBase: new URL(SITE_URL),
@@ -36,13 +36,13 @@ const metadata: Metadata = {
       {
         alt: title,
         height: 360,
-        url: 'https://nullik.com/ai/og-480x270.png',
+        url: 'https://opengpt.ir/og-480x270.png',
         width: 480,
       },
       {
         alt: title,
         height: 720,
-        url: 'https://nullik.com/ai/og-960x540.png',
+        url: 'https://opengpt.ir/og-960x540.png',
         width: 960,
       },
     ],
@@ -61,7 +61,7 @@ const metadata: Metadata = {
     card: 'summary_large_image',
     description,
     images: [
-      'https://nullik.com/ai/og-960x540.png',
+      'https://opengpt.ir/og-960x540.png',
     ],
     site: '@themortaza',
     title,
