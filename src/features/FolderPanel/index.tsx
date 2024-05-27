@@ -42,11 +42,11 @@ const FolderPanel = memo<PropsWithChildren>(({ children }) => {
       
         const nextWidth = typeof size.width === 'string' ? Number.parseInt(size.width) : size.width;
       
-        if (isNaN(nextWidth)) return; // Add this line to handle NaN case
+        if (typeof nextWidth === 'number' && isNaN(nextWidth)) return; // Type guard and isNaN check
       
         if (isEqual(nextWidth, sessionsWidth)) return;
       
-        if (nextWidth !== undefined) { // Check if nextWidth is not undefined
+        if (nextWidth !== undefined) {
           setWidth(nextWidth);
           updatePreference({ sessionsWidth: nextWidth });
         }
