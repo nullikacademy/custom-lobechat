@@ -49,47 +49,48 @@ const ModelSwitchPanel = memo<PropsWithChildren>(({ children }) => {
     isEqual,
   );
 
-  const items: MenuProps['items'] = useMemo(() => {
+  const items = useMemo(() => {
     const getModelItems = (provider: ModelProviderCard) => {
-      const items: MenuProps['items'] = provider.chatModels.map((model) => ({
+      const items = provider.chatModels.map((model) => ({
         key: model.id,
         label: <ModelItemRender {...model} />,
         onClick: () => {
           updateAgentConfig({ model: model.id, provider: provider.id });
         },
       }));
-  
+
       // if there is empty items, add a placeholder guide
-      if (items.length === 0) {
-        items.push({
-          key: 'empty',
-          label: (
-            <Flexbox gap={8} horizontal style={{ color: theme.colorTextTertiary }}>
-              {t('ModelSwitchPanel.emptyModel')}
-              <Icon icon={LucideArrowRight} />
-            </Flexbox>
-          ),
-          onClick: () => {
-            router.push(withBasePath('/settings/llm'));
+      if (items.length === 0)
+        return [
+          {
+            key: 'empty',
+            label: (
+              <Flexbox gap={8} horizontal style={{ color: theme.colorTextTertiary }}>
+                {t('ModelSwitchPanel.emptyModel')}
+                <Icon icon={LucideArrowRight} />
+              </Flexbox>
+            ),
+            onClick: () => {
+              router.push(withBasePath('/settings/llm'));
+            },
           },
-        });
-      }
-  
+        ];
+
       return items;
     };
-  
+
     // If there is only one provider, just remove the group, show model directly
     if (enabledList.length === 1) {
       const provider = enabledList[0];
       return getModelItems(provider);
     }
-  
+
     // otherwise show with provider group
     return enabledList.map((provider) => ({
+      children: getModelItems(provider),
       key: provider.id,
       label: <ProviderItemRender provider={provider.id} />,
-      children: getModelItems(provider),
-      type: 'group' as const, // Explicitly set type to 'group'
+      type: 'group',
     }));
   }, [enabledList]);
 
