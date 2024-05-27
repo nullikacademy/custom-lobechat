@@ -39,17 +39,13 @@ const FolderPanel = memo<PropsWithChildren>(({ children }) => {
       }}
       onSizeChange={(_, size) => {
         if (!size) return;
-      
+
         const nextWidth = typeof size.width === 'string' ? Number.parseInt(size.width) : size.width;
-      
-        if (isNaN(nextWidth)) return; // Add this line to handle NaN case
-      
+
         if (isEqual(nextWidth, sessionsWidth)) return;
-      
-        if (nextWidth !== undefined) { // Check if nextWidth is not undefined
-          setWidth(nextWidth);
-          updatePreference({ sessionsWidth: nextWidth });
-        }
+
+        setWidth(nextWidth);
+        updatePreference({ sessionsWidth: nextWidth });
       }}
       placement="left"
       size={{ height: '100%', width: sessionsWidth }}
